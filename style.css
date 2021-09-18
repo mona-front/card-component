@@ -1,0 +1,113 @@
+@import url("https://fonts.google.com/specimen/Lexend+Deca family=Lexend Deca:400,800");
+@import url("https://https://fonts.google.com/specimen/Big+Shoulders+Display family=Big Shoulders Display:700,800");
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Lexend Deca";
+    font-weight: 400;
+    color: hsl(0, 0%, 95%);
+    font-size: 15px;
+
+}
+p{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.cardContianer{
+    width:25%;
+    height:300px;
+    text-align: start;
+}
+
+.card{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 15px;}
+    
+#sedans{
+    background-color:hsl(31, 77%, 52%) ;
+}
+#sedansButton{
+    background-color: cornsilk;
+    color:hsl(31, 77%, 52%) ;
+    transition: all 1s ease-in-out;
+}
+#sedansButton:hover{
+    background-color: hsl(31, 77%, 52%) ;;
+    color:hsl(0, 0%, 95%);
+    transition: all 1s ease-in-out;
+}
+#suvs{
+    background-color:hsl(184, 100%, 22%) ;
+}
+#suvsButton{
+    background-color: cornsilk;
+    color: hsl(184, 100%, 22%);
+    transition: all 1s ease-in-out;
+}
+#suvsButton:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    transition: all 1s ease-in-out;
+}
+
+#luxury{
+    background-color: hsl(179, 100%, 13%);
+
+}
+#luxuryButton{
+ background-color: cornsilk;
+ color:hsl(179, 100%, 13%); 
+ transition: all 1s ease-in-out;
+}
+#luxuryButton:hover{
+    background-color: hsl(179, 100%, 13%);;
+    color: hsl(0, 0%, 95%);
+    transition: all 1s ease-in-out;
+   }
+.learnMore{
+    border: 1px solid hsl(0, 0%, 95%);
+    padding: 10px 15px;
+    border-radius:20px;
+    opacity: 0.7;
+    transition: opacity 0.6s ease-in-out;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.learnMore:hover{
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.6 ease-in-out;
+}
+@media  (max-width:375px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .cardContianer{
+        width: 100%;
+    }
+   p{
+       line-height:30px;
+       
+   }
+}
